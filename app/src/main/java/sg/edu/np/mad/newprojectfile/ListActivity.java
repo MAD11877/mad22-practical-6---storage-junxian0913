@@ -10,13 +10,18 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class ListActivity extends AppCompatActivity {
+    private FirebaseAuth mAuth;
 
 
     public ArrayList<user> list2 = new ArrayList<>();
@@ -59,6 +64,8 @@ public class ListActivity extends AppCompatActivity {
             db.insertmessage(royce);
             list2.add(royce);
         }
+
+
 
 
 

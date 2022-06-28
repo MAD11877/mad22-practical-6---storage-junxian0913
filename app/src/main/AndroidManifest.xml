@@ -10,16 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewProjectFile">
         <activity
-            android:name=".loginpage"
-            android:exported="false" />
-        <activity
-            android:name=".Messageholder"
+            android:name=".ListActivity"
             android:exported="false" />
         <activity
             android:name=".MessageGroup"
             android:exported="false" />
         <activity
-            android:name=".ListActivity"
+            android:name=".loginpage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
